@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person={name:"Ann",age:13,address:"234 mjjk"}
+        let stdent=Object.create(person)
+        console.log(stdent)
+        stdent.roll_no=1
+        stdent.__proto__.name="ram"//to replace the name
+        stdent["gender"]="female"
+        
+        console.log(stdent.name)
+       // Object.freeze(stdent)//to make an obj unchangeble
+       // console.log(Object.isFrozen(stdent))
+//stdent.roll_no=2
+//stdent.batch="cse"
+//console.log(stdent)
+Object.seal(stdent)
+stdent.roll_no=2
+stdent.batch="cse"
+console.log(stdent)
+const a=100//const vales cannot be changed
+var x=100
+var x=50
+for(var i of "hello")
+{
+    console.log(i)
+}
+console.log(i)
+
+    </script>
+    
+</body>
+</html>

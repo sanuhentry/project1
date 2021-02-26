@@ -1,0 +1,15 @@
+.demo{
+background-color: gray;
+}
+.demo:hover{
+    background-color:hotpink;
+}
+.demo2:nth-child(even){
+    background-color:green;
+    }
+    .demo2:hover{
+        background-color:red;
+    }
+    .tb1{
+        border-collapse: collapse;
+    }

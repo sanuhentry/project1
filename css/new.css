@@ -1,0 +1,21 @@
+.nav ul{
+    margin:0;
+    padding: 0;
+    background-color: aqua;
+    text-align: center;
+}
+    
+.nav li{
+    display: inline-block;
+}
+
+.nav a{
+    text-decoration: black;
+    color: black ;
+    width: 100px;
+    display: block;
+    padding: 15px;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: 0.4s;
+}

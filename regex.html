@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function check(){
+       // let regex=/^\987\d{7}$/    //add g for global search
+      // let regex=/^\+91\s(987)\d{7}$/g
+      let regex=/^[a-zA-Z0-9+._-]+@[gmail.com |yahoo.com]+$/  //email validation
+        let data=document.getElementById("data").value
+        if(regex.test(data)){
+            alert("valid mobile nmber")
+        }
+        else{
+            alert("invalid mobile nmber")
+        }
+alert(data.match(regex))
+    }
+    </script>
+    <input type="text" id=data>
+    <button onclick="check()">click</button>
+</body>
+</html>

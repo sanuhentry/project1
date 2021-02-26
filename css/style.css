@@ -1,0 +1,14 @@
+/*based on style class*/
+.demo{
+    background-color: darkblue;
+    width: 100%;
+    height: 200px;
+}
+#p1{
+    color:darkgray;
+}
+h1{
+    color: darkorchid;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let  names=["anna","anu","sanu","vyna","abhi"]
+        console.log(names.slice(2,5))
+        console.table(names)
+        console.log("*******using for loop********")
+        for(element of names)
+        {
+            console.log(element)
+        }
+        console.log("*************************")
+        for(index  in  names)
+        {
+            console.log(index)
+            console.log(names[index])
+        }
+        console.log("*******using forEach fnction********")
+        names.forEach((names)=>{
+            console.log(names)
+        })
+        newarr=names.map((names)=>{
+           return names.concat("*")
+        })
+        console.log(newarr)
+        //filter fn for selection
+       let newarr2=names.filter((names)=>{
+if(names.startsWith("a")){
+    return names
+}
+        })
+        console.log(newarr2)
+        let num_ar=[9,11,10,4,7,8]
+        let newarr3=num_ar.map((number)=>{
+return number**2
+
+        })
+        //reduce fun starts from first element
+        console.log(newarr3)
+        let result=num_ar.reduce((x,y)=>{
+          //  console.log("x is",x)
+           // console.log("y is",y)
+            return x+y
+        })
+        console.log(result)
+        //redceRight fun starts from right side
+        let result1=num_ar.reduceRight((x,y)=>{
+           console.log("x is",x)
+            console.log("y is",y)
+            return x+y
+        })
+        console.log(result1)
+       // num_ar.sort()
+        //.log(num_ar)
+        num_ar.reverse()
+        console.log(num_ar)
+    </script>
+</body>
+</html>

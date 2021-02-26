@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="create()">Add</button>
+   <div id="mydiv">
+
+   </div>
+   <ul id="mylist">
+
+   </ul>
+   <script>
+        function create() {
+
+           let para= document.createElement("p")
+           para.innerText="Hypertext markp langage"
+           document.getElementById('mydiv').appendChild(para)
+        }
+        let arr=["a","b","c"]
+    /*for(element of arr)
+    {
+      let li=document.createElement("li")  
+      li.innerText=element
+      document.getElementById("mylist").appendChild(li)
+    }*/
+    let s=""
+    for(x of  arr)
+    {
+        s+=`<li>${x}</li>`
+    }
+    document.getElementById("mylist").innerHTML=s
+
+    
+    </script>
+    
+
+</body>
+</html>
